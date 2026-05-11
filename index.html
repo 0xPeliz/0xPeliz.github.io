@@ -3,75 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio di [Tuo Nome]</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        header h1 {
-            color: #fff;
-        }
-        .project {
-            background: #fff;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-    </style>
+    <title>Il Mio Portfolio | Studente Informatica</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font esterna per un look più moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Ciao, sono [Tuo Nome]</h1>
-        <p>Studente di Informatica | Sviluppatore | Tech Enthusiast</p>
+    <nav>
+        <div class="container">
+            <span class="logo">DevPortfolio</span>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#interessi">Interessi</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <h1>Ciao, sono uno Studente di Informatica</h1>
+            <p>Appassionato di sviluppo software e nuove tecnologie.</p>
+            <a href="https://github.com/TUO-UTENTE" class="btn">Mio GitHub</a>
+        </div>
     </header>
 
-    <div class="container">
-        <section id="about">
-            <h2>Su di me</h2>
-            <p>Sono uno studente di informatica appassionato di sviluppo software. Attualmente sto imparando [inserisci i linguaggi o le tecnologie che studi, es. Java, C++, Python, Web Dev].</p>
-        </section>
-
-        <section id="projects">
-            <h2>I miei progetti</h2>
-            <div class="project">
-                <h3>Nome del Progetto 1</h3>
-                <p>Breve descrizione del progetto. Che problema risolve e quali tecnologie hai usato.</p>
-                <a href="#">Link su GitHub</a>
+    <section id="interessi" class="container">
+        <h2>Interessi di Studio</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Cybersecurity</h3>
+                <p>Studio delle vulnerabilità web e protocolli di rete sicuri.</p>
             </div>
-            <div class="project">
-                <h3>Nome del Progetto 2</h3>
-                <p>Breve descrizione del progetto.</p>
-                <a href="#">Link su GitHub</a>
+            <div class="card">
+                <h3>Intelligenza Artificiale</h3>
+                <p>Approfondimento su Machine Learning e reti neurali in Python.</p>
             </div>
-        </section>
-        
-        <section id="contact">
-            <h2>Contatti</h2>
-            <p>Puoi trovarmi su <a href="https://linkedin.com/in/tuo-profilo">LinkedIn</a> o guardare i miei codici su <a href="https://github.com/tuo-username">GitHub</a>.</p>
-        </section>
-    </div>
+            <div class="card">
+                <h3>Sviluppo Web</h3>
+                <p>Creazione di interfacce moderne con React e architetture Backend.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="progetti" class="container">
+        <h2>I Miei Progetti</h2>
+        <div class="grid" id="project-list">
+            <!-- I progetti verranno inseriti via JavaScript o a mano qui -->
+            <div class="card project-card">
+                <h3>Progetto E-commerce</h3>
+                <p>Un'applicazione full-stack realizzata per l'esame di Database.</p>
+                <a href="#">Dettagli →</a>
+            </div>
+            <div class="card project-card">
+                <h3>Algoritmi di Ordinamento</h3>
+                <p>Visualizzatore di algoritmi scritto in Java.</p>
+                <a href="#">Dettagli →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Creato con passione da uno studente</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
